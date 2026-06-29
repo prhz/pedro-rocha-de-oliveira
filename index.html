@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Rocha</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <span class="head-title">Pedro Rocha 5497022</span>
+        <nav class="navbar">
+            <ul>
+                <li class="nav-opt" onclick="colorTab(this)">
+                    <a href="#sobre-mim">Sobre mim</a>
+                </li>
+                <li class="nav-opt" onclick="colorTab(this)">
+                    <a href="#formacao">Formação</a>
+                </li>
+                <li class="nav-opt" onclick="colorTab(this)">
+                    <a href="#portfolio">Portfólio</a>
+                </li>
+                <li class="nav-opt" onclick="colorTab(this)">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mim">
+            <h1>Sobre Mim</h1>
+            <p>
+                Bem vindo(a)! Meu nome é Pedro Rocha de Oliveira, e essas são algumas informações sobre mim:
+            </p>
+            <ul>
+                <li>20 anos</li>
+                <li>Nascido e criado em Uberlândia MG</li>
+                <li>Neurodivergente com Transtorno do Espectro Autisota nível 1 de suporte</li>
+            </ul>
+            <p>
+                Gosto de aprender coisas novas e desafiadoras, principalmente na área da programação.
+                Alguns dos meus hobbies são música, esportes e fotografia.
+            </p>
+        </section>
+        <section id="formacao">
+            <h1>Formação</h1>
+            <span class="wrapper">
+                <div class="courses">
+                    <div>
+                        <span class="grade">Bacharelado</span>
+                        <span class="ongoing">cursando</span>
+                        <span class="name">Engenharia de Software - UNINTER</span>
+                        <br>
+                        <span class="timespan">jul 2025 - jul 2029</span>
+                    </div>
+                    <div>
+                        <span class="grade">Técnico</span>
+                        <br>
+                        <span class="name">Análise e Desenvolvimento de Sistemas - SENAI FIEMG</span>
+                        <br>
+                        <span class="timespan">mai 2023 - ago 2024</span>
+                    </div>
+                </div>
+                <div class="languages">
+                    <h2>Idiomas</h2>
+                    <ul>
+                        <li class="language">Português Brasileiro<span class="mastery">Nativo</span></li>
+                        <li class="language">Inglês <span class="mastery">Intermediário</span></li>
+                    </ul>
+                </div>
+            </span>
+
+        </section>
+        <section id="portifolio">
+            <h1>Portifólio</h1>
+            <div class="project-card">
+                <span>Proposta de mudança no design do site da UBERHUB (SAGA SENAI de Inovação)</span>
+                <a href="https://github.com/prhz/UBERHUB" class="github-lnk" target="_blank">
+                    <img src="resources/svg/GitHub_Lockup_Black_Clearspace.svg" alt="GitHub logo">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contato">
+            <h1>Contato</h1>
+            <form action="#contato" onsubmit="onFormSubmit(this)">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name-input" oninput="validateNameInput()">
+
+                <label for="email">E-mail</label>
+                <input type="email" autocomplete="off" name="email" id="email-input" oninput="validateEmailInput()">
+
+                <label for="message">Mensagem</label>
+                <input type="text" name="message" id="message-input" oninput="validateMessageInput()">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </footer>
+</body>
+
+</html>
