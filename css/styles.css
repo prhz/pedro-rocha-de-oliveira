@@ -41,7 +41,6 @@ body {
 header {
     position: sticky;
     top: 0;
-    width: 100%;
     padding: 0 0 0 .5rem;
     display: grid;
     grid-template-columns: auto auto; 
